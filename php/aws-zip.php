@@ -1,8 +1,8 @@
 <?php
 $userKey = 'TJWgaqvBNPyZEzPCPSq2JB';
 $userSecret = '41b05daaZ6098Z456aZb2a3Za0024dec178c';
-$awsKey = 'AKIA325RUJVP5Y472SRP';
-$awsSecret = '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';
+$awsKey = 'AKIA325RUJVPWQWTGQBB';
+$awsSecret = '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';
 $awsBucket = 'zipbucket-test';
 $awsRegion = 'eu-central-1';
 

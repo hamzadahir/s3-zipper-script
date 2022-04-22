@@ -1,10 +1,10 @@
 <?php
-$userKey = 'TJWgaqvBNPyZEzPCPSq2JB';
-$userSecret = '41b05daaZ6098Z456aZb2a3Za0024dec178c';
-$awsKey = 'AKIA325RUJVPWQWTGQBB';
-$awsSecret = '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';
-$awsBucket = 'zipbucket-test';
-$awsRegion = 'eu-central-1';
+$userKey = 'TJWgaqvBNPyZEzPCPSq2JB'; // important! key from https://docs.s3zipper.com/
+$userSecret = '41b05daaZ6098Z456aZb2a3Za0024dec178c'; // important! secret from https://docs.s3zipper.com/
+$awsKey = 'AKIA325RUJVPTDFY4CM6'; // important! key from AWS
+$awsSecret = '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'; // important! secret from AWS
+$awsBucket = 'alttimelines.hamza'; // important! bucket name
+$awsRegion = 'us-east-1'; // important! bucket region
 
 $curl = curl_init();
 
@@ -53,10 +53,10 @@ $fields = array(
     'awsBucket' => $awsBucket,
     'awsRegion' => $awsRegion,
     'expireLink' => 24,
-    //'resultsEmail' => 'email@yahoo.com',
+    //'resultsEmail' => 'email@yahoo.com', //in need send link to email
     'bucketAsDir' => 'false',
     'filePaths' => $filePaths
-    //'zipFileName' => 'file.zip'
+    //'zipFileName' => 'file.zip' //in need specific file name
 );
 
 
@@ -87,6 +87,8 @@ if ($err) {
 } else {
     $urldata = $response;
 }
+
+//echo $urldata;
 
 $curl = curl_init();
 

@@ -1,10 +1,10 @@
 <?php
-$userKey = 'TJWgaqvBNPyZEzPCPSq2JB'; // important! key from https://docs.s3zipper.com/
-$userSecret = '41b05daaZ6098Z456aZb2a3Za0024dec178c'; // important! secret from https://docs.s3zipper.com/
-$awsKey = 'AKIA325RUJVPTDFY4CM6'; // important! key from AWS
-$awsSecret = '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'; // important! secret from AWS
-$awsBucket = 'alttimelines.hamza'; // important! bucket name
-$awsRegion = 'us-east-1'; // important! bucket region
+$userKey = ''; // important! key from https://docs.s3zipper.com/
+$userSecret = ''; // important! secret from https://docs.s3zipper.com/
+$awsKey = ''; // important! key from AWS
+$awsSecret = ''; // important! secret from AWS
+$awsBucket = ''; // important! bucket name
+$awsRegion = ''; // important! bucket region
 
 $curl = curl_init();
 
